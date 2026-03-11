@@ -8,7 +8,7 @@ Extract structured epidemiological parameters from clinical PDFs in under
 ## Prerequisites
 
 - Python 3.11+
-- An Anthropic API key (already in `edwards/.env`)
+- An Anthropic API key
 
 ---
 
@@ -16,7 +16,6 @@ Extract structured epidemiological parameters from clinical PDFs in under
 
 ```bash
 # 1. Navigate to the tool folder
-cd edwards/5_epi_evi_extract
 
 # 2. Install dependencies
 pip install -r requirements.txt
@@ -126,8 +125,8 @@ All are free to download:
 ## Troubleshooting
 
 **"ANTHROPIC_API_KEY not found"**
-The app looks for the key in `5_epi_evi_extract/.env` first, then
-`edwards/.env`. Make sure at least one exists with a valid key.
+The app looks for the key in `.env` first, then
+`.env`. Make sure at least one exists with a valid key.
 
 **Status shows ✗ filename failed**
 - Confirm the file is a text-based PDF (not a scanned image — scanned PDFs
